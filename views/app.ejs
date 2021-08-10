@@ -1,0 +1,48 @@
+<%- layout("/layouts/boilerplate") %>
+
+<div class="container d-flex flex-column justify-content-center align-items-center vh-100">
+    <div class="card shadow-sm p-2 mainContent">
+        <div class="card-body">
+            <div class="d-flex justify-content-center">
+                <h1 class="d-inline-flex align-items-center">
+                    Convert from
+                    <span class="mx-3">
+                        <select class="form-select" aria-label="Default select example" id="cur1Select">
+                            <option value="usd" name="cur1" selected>USD</option>
+                            <option value="eur" name="cur1">EUR</option>
+                            <option value="jpy" name="cur1">JPY</option>
+                            <option value="mxn" name="cur1">MXN</option>
+                            <option value="php" name="cur1">PHP</option>
+                            <option value="inr" name="cur1">INR</option>
+                        </select>
+                    </span>
+                    to
+                    <span class="ms-3">
+                        <select class="form-select" aria-label="Default select example" id="cur2Select">
+                            <option value="usd" name="cur2">USD</option>
+                            <option value="eur" name="cur2" selected>EUR</option>
+                            <option value="jpy" name="cur2">JPY</option>
+                            <option value="mxn" name="cur2">MXN</option>
+                            <option value="php" name="cur2">PHP</option>
+                            <option value="inr" name="cur2">INR</option>
+                        </select>
+                    </span>
+                </h1>
+            </div>
+
+            <div class="d-flex justify-content-center my-4">
+                <input class="form-control" type="number" name="curAmount">
+            </div>
+
+            <div class="d-flex justify-content-center">
+                <div class="card shadow-sm curValue">
+                    <div class="card-body">
+                        <h4>Enter in your amount</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="/javascripts/display.js"></script>
